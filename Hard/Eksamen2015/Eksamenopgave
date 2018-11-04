@@ -1,0 +1,58 @@
+Dette var eksamensættet i IMPR 2015. http://people.cs.aau.dk/~normark/impr-15/eksamensopgave-pakke-e15/opgave.html
+Eksamensopgave i Imperativ Programmering, 2015
+Opgaven udleveres: torsdag 26.11.2015 kl. 8:15. 
+Programmet afleveres: fredag 4.12.2015 kl. 12:00. 
+Aflevering af eksamensopgaven: Upload dit program her
+
+De generelle regler for udarbejdelse og aflevering af opgaven er beskrevet i Rammer for Eksamensopgaven i Imperativ Programmering.
+
+I den danske superliga mødes 12 fodboldhold indbyrdes i et antal kampe. Kampene er inddelt i runder med seks kampe i hver runde. Den første runde er nummer 1. Der gives tre point for en sejr, ét point for uafgjort, og nul point for en tabt kamp. I tilfælde af pointlighed mellem to hold afgør målforskellen (differencen mellem antal mål scoret af holdet og antal mål scoret mod holdet), og dernæst det samlede antal scorede mål den indbyrdes placering af de to hold (sådan er reglerne i denne opgave). Hvis alt står lige, beslutter vi blot at ordne de to hold alfabetisk efter det forkortede klubnavn (som er på to eller tre store bogstaver).
+
+Denne opgave handler om - på forskellig vis - at opgøre resultatet af superligaen 2014-2015. Du skal indlæse samtlige kampresultater fra en tekstfil, som allerede er lavet. Kampresultaterne stammer fra www.superstats.dk. Kampresultaterne skal læses ind i en datastruktur, som er hensigtsmæssig for din løsning af problemerne i denne opgave.
+
+Tekstfilen med kampresultaterne er opdelt i runder. Runderne adskilles af en tom linje. Iøvrigt er filen linjeopdelt, med én kamp per linje. Formatet af en linje er følgende:
+
+  ugedag dato  klokkeslæt    hjemmehold - udehold   hjemmemål - udemål   tilskuerantal
+Et eller flere mellemrum adskiller disse bestanddele i tekstfilen. Eksempelvis betyder linjen
+
+Eksempelvis betyder linjen:
+
+  Fre     18/07 18.30     FCN - FCV       3 - 2      3.349
+at FCN spillede mod FCV; FCN scorede tre mål; FCV scorede to mål; Kampen blev spillet 18. juli kl 18.30 på FCNs hjemmebane. Kampen blev overværet af 3349 tilskuere. Det fremgår kun implicit at kampen er spillet i 2014, og at kampen foregår i første runde. Det kan antages at kampe der spilles i 7.-12. måned foregår i 2014, mens kampe der spilles i 2.-5. måned spilles i 2015.
+
+På baggrund af de indlæste data om kampene skal du skrive et C program, der løser følgende problemer:
+
+Find og udskriv de kampe, hvor der er scoret syv eller flere mål.
+Find den runde som har været den mest målrige i turneringen. Find også det antal mål, der i alt er scoret i denne runde. (Hvis to eller flere runder har det samme antal mål ønskes den tidligste runde).
+Find de hold, som vinder flere kampe på udebane end på hjemmebane.
+Find det hold som samlet set - i hele turneringen - har haft færrest tilskuere ved kampe, som spilles på klubbens hjemmebane. Lad dit program udskrive både holdnavnet og tilskuertallet.
+Udskriv en liste over alle kampe med starttidspunkt mellem to givne klokkeslæt k1 og k2 og som spilles på en bestemt ugedag u. Det kan antages at k1 og k2 er klokkeslæt i det samme døgn. Kampe som starter præcist på tidspunkterne k1 og k2 medtages. Klokkeslæt angives i dit program som en tekststreng på formen "hh.mm", f.eks. "15.00". Ugedagen u angives i dit program på samme forkortede form som i tekstfilen. Sorter listen af kampe efter antal mål scoret i kampene. Den mest målrige kamp kommer først.
+Beregn og udskriv en samlet tabel over stillingen i turneringen efter sidste spillerunde, i stil med stillingen vist i Wikipedias artikel om superligaen 2014 - 2015. I tabellen skal holdene være ordnede efter placeringen i turneringen, med det bedst placerede hold først og det dårligst placerede hold sidst. Endvidere skal der udskrives 'søjler' med point, antal spillede kampe, antal vundne kampe, antal tabte kampe, antal uafgjorte kampe, og målforskel.
+Skriv en main funktion, som i en simple tekst-orienteret dialog med brugeren tillader aktivering af ovennævnte funktioner. Det anbefales at denne del af programmet laves så simpel som mulig.
+
+Lad os antage at dit oversatte program er på filen superliga.exe. Når dit program køres som
+
+  superliga.exe --print
+skal det - uden at modtage nogen form for input fra brugeren - udskrive dine resultater for alle seks opgaver på en klar og tydelig måde på standard output. (Brug programparametre til main for at opnå dette). I opgave 5 ønskes denne udskrift at omfatte fredagskampe som startes mellem kl. 18.05 og 19.05. Dette gøres ved at kalde den funktion, der programmeres i opgave 5, med parametre svarende til tidspunkterne "18.05" og "19.05" og ugedag "Fre".
+
+Når programmet startes uden angivelse af   --print   skal programmet starte med udførelse af den ønskede (simple) brugerdialog.
+
+I denne opgave er det OK at anvende danske navne på variable og funktioner. Undgå dog, som sædvanlig, brugen af danske bogstaver (æ, ø, å, Æ, Ø, Å) i variabelnavne og funktionsnavne.
+
+Når dit program skal vurderes vil der blive lagt vægt på følgende egenskaber:
+
+Læsbarhed og forståelighed, herunder god og klar programopstilling (indrykning mv.) samt fornuftig anvendelse af programkommentarer.
+God navngivning af variable og funktioner, der afspejler den rolle som variable og funktioner spiller i programmet.
+Fornuftig nedbrydning af problemløsningen i et passende antal funktioner, som følge af top-down programmering ved trinvis forfinelse (del og hersk).
+God parametrisering af funktionerne, således at al input til en funktion foregår gennem input parametre, og at output fra en funktionen formidles gennem returværdien eller output parametre.
+Valg af hensigtsmæssige datastrukturer.
+Hensigtsmæssig anvendelse af funktioner fra C Standard Libraries.
+Som følge af den begrænsede mængde af data, som skal behandles i denne opgave, prioriteres et enkelt og klart kildeprogram højere end effektivitet af beregningerne.
+
+Evt. uklarheder i opgaveformuleringen forventes afklaret som en del af opgaveløsningen (gennem kommentarer i det afleverede program).
+
+Hvis der opstår behov for yderligere information om opgaven, vil dette blive føjet til Spørgsmål og Svar dokumentet, som er sat op for opgaven.
+
+Kurt Nørmark 
+normark@cs.aau.dk 
+http://people.cs.aau.dk/~normark/
