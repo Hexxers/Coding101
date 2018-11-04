@@ -1,0 +1,9 @@
+Dette er efterfølgeren til Read_from_file_v1.
+
+I denne opgave skal i gemme værdierne i variable. 
+
+Tekstfilen med kampresultaterne er opdelt i runder. Runderne adskilles af en tom linje. 
+Iøvrigt er filen linjeopdelt, med én kamp per linje. Formatet af en linje er følgende:
+
+ugedag dato  klokkeslæt    hjemmehold - udehold   hjemmemål - udemål   tilskuerantal
+
