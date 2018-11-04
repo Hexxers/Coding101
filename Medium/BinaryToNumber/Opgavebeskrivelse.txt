@@ -1,0 +1,5 @@
+Convert an array of zero's and one's binary value to an integer value.
+Example:
+Given the array [0,1,0,1] the output should be 5.
+
+This can both be done for arrays of lenght 4, but feel free to try other varying lenghts.
