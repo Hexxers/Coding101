@@ -1,8 +1,0 @@
-Ud fra det indlæste data 
-
-Find og udskriv de kampe, hvor der er scoret syv eller flere mål.
-Find den runde som har været den mest målrige i turneringen. Find også det antal mål, der i alt er scoret i denne runde. (Hvis to eller flere runder har det samme antal mål ønskes den tidligste runde).
-Find de hold, som vinder flere kampe på udebane end på hjemmebane.
-Find det hold som samlet set - i hele turneringen - har haft færrest tilskuere ved kampe, som spilles på klubbens hjemmebane. Lad dit program udskrive både holdnavnet og tilskuertallet.
-Udskriv en liste over alle kampe med starttidspunkt mellem to givne klokkeslæt k1 og k2 og som spilles på en bestemt ugedag u. Det kan antages at k1 og k2 er klokkeslæt i det samme døgn. Kampe som starter præcist på tidspunkterne k1 og k2 medtages. Klokkeslæt angives i dit program som en tekststreng på formen "hh.mm", f.eks. "15.00". Ugedagen u angives i dit program på samme forkortede form som i tekstfilen. Sorter listen af kampe efter antal mål scoret i kampene. Den mest målrige kamp kommer først.
-Beregn og udskriv en samlet tabel over stillingen i turneringen efter sidste spillerunde, i stil med stillingen vist i Wikipedias artikel om superligaen 2014 - 2015 https://da.wikipedia.org/wiki/Superligaen_2014-15#Stilling. I tabellen skal holdene være ordnede efter placeringen i turneringen, med det bedst placerede hold først og det dårligst placerede hold sidst. Endvidere skal der udskrives 'søjler' med point, antal spillede kampe, antal vundne kampe, antal tabte kampe, antal uafgjorte kampe, og målforskel.
