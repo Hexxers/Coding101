@@ -32,7 +32,7 @@ typedef struct{
 }match_t;
 
 
-void solve_all_tasks();
+void solve_all_tasks();                               /*Solve all the tasks*/
 void get_match_data(match_t *output); 
 void opgave_1(match_t *input);                        /*Find matches with/more 7 goals*/
 void opgave_2(match_t *input);                        /*Find the round with highest score*/
