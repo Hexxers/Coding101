@@ -1,0 +1,6 @@
+Creat a program that finds the nth fibonachi number using recursion.
+Example:
+The 7th fibonachi number is 13 (assuming 0 is not part of the sequence)
+
+The next number in the fibonachi sequence is found by adding the last two numbers. So to find the 8th number
+the 6th and 7th numbers are added up. Ie. 8 + 13 = 21.
